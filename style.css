@@ -1,0 +1,95 @@
+body{
+    height: 98vh;
+    background-color: #9b9a9a;
+}
+.scaffold{
+    position: relative;
+    height: 500px;
+    width: 400px;
+    border: 5px solid black;
+}
+.btmPoll{
+    position: absolute;
+    background-color: #000000;
+    height: 5px;
+    width: 300px;
+    bottom: 10px;
+    left: 50px;
+}
+.verticalPoll{
+    position: absolute;
+    background-color: #000000;
+    height: 400px;
+    width: 5px;
+    bottom: 10px;
+    left: 150px;
+}
+.horizontalPoll{
+    position: absolute;
+    background-color: #000000;
+    height: 5px;
+    width: 150px;
+    top:90px;
+    left: 150px;
+}
+.rope{
+    position: absolute;
+    background-color: #000000;
+    height: 50px;
+    width: 2px;
+    top: 90px;
+    left: 250px;
+}
+.head{
+    position: absolute;
+    background-color: #453b38;
+    height: 50px;
+    width: 50px;
+    top: 140px;
+    left: 227.5px;
+    border-radius: 50%;
+}
+.body{
+    position: absolute;
+    background-color: #453b38;
+    height: 90px;
+    width: 5px;
+    top: 190px;
+    left: 250px;
+}
+.leftH{
+    position: absolute;
+    background-color: #453b38;
+    height: 50px;
+    width: 5px;
+    top: 190px;
+    left: 238px;
+    transform: rotate(30deg);
+}
+.rightH{
+    position: absolute;
+    background-color: #453b38;
+    height: 50px;
+    width: 5px;
+    top: 190px;
+    left: 262px;
+    transform: rotate(-30deg);
+}
+.leftL{
+    position: absolute;
+    background-color: #453b38;
+    height: 50px;
+    width: 5px;
+    top: 275px;
+    left: 238px;
+    transform: rotate(30deg);
+}
+.rightL{
+    position: absolute;
+    background-color: #453b38;
+    height: 50px;
+    width: 5px;
+    top: 275px;
+    left: 262px;
+    transform: rotate(-30deg);
+}

@@ -1,0 +1,131 @@
+/*parent container*/
+.display-flex-column{
+    display:flex;
+    flex-direction: column;
+}
+.display-flex-column-reverse{
+    display:flex;
+    flex-direction: column-reverse;
+}
+.display-flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.display-flex-row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-start{
+    justify-content: flex-start;
+}
+.justify-content-end{
+    justify-content: flex-end;
+}
+.justify-content-space-around{
+    justify-content: space-around;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.justify-content-space-evenly{
+    justify-content: space-evenly;
+}
+.align-items-start{
+    align-items: flex-start;
+}
+.align-items-end{
+    align-items: flex-end;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-stretch{
+    align-items: stretch;
+}
+.align-items-baseline{
+    align-items: baseline;
+}
+.flex-wrap-no-wrap{
+    flex-wrap: nowrap;
+}
+.flex-wrap-wrap{
+    flex-wrap: wrap;
+}
+.flex-wrap-wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+
+/*child elements*/
+
+/*flex-shrink (object shrinks more the higher the value)*/
+.flex-shrink-1{
+    flex-shrink: 1;
+}
+.flex-shrink-2{
+    flex-shrink: 2;
+}
+.flex-shrink-3{
+    flex-shrink: 3;
+}
+.flex-shrink-4{
+    flex-shrink: 4;
+}
+.flex-shrink-5{
+    flex-shrink: 5;
+}
+/*There is a shortcut available to set several flex properties at once.
+ The flex-grow, flex-shrink, and flex-basis properties can all be
+  set together by using the flex property.
+
+For example, flex: 1 0 10px; will set the item to flex-grow: 1;
+, flex-shrink: 0;, and flex-basis: 10px;.
+
+The default property settings are flex: 0 1 auto;.*/
+
+/*flex-grow (object grows the higher the value)*/
+.flex-grow-1{
+    flex-grow:1;
+}
+.flex-grow-2{
+    flex-grow:2;
+}
+.flex-grow-3{
+    flex-grow:3;
+}
+.flex-grow-4{
+    flex-grow:4;
+}
+.flex-grow-5{
+    flex-grow:5;
+}
+
+/*The flex-basis property specifies the initial size
+ of the item before CSS makes adjustments with flex-shrink or flex-grow.
+The units used by the flex-basis property are the same as other size
+properties (px, em, %, etc.). The value auto sizes items based on the content.*/
+
+/*The order property is used to tell CSS the order of how flex items appear in the flex container.
+ By default, items will appear in the same order they come in the source HTML.
+ The property takes numbers as values, and negative numbers can be used.*/
+
+/* The property for flex items is align-self. This property allows you to adjust each item's alignment individually,
+ instead of setting them all at once. This is useful since other common adjustment techniques using the CSS properties
+ float, clear, and vertical-align do not work on flex items.
+align-self accepts the same values as align-items and will override any value set by the align-items property.*/
+.align-self-start{
+    align-self: flex-start;
+}
+.align-self-end{
+    align-self: flex-end;
+}
+.align-self-center{
+    align-self: center;
+}
+.align-self-normal{
+    align-self: normal;
+}
+
+
