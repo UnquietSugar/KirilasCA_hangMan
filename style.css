@@ -110,3 +110,16 @@ input{
 .letter{
     color: transparent;
 }
+.newGame{
+    position: absolute;
+    transition: 0.2s;
+    top: 0;
+    right:50px;
+    background-color: #8c8b8b;
+    padding: 10px;
+    cursor: pointer;
+}
+.newGame:hover{
+    color: #92ef92;
+    transform: scale(1.1);
+}
