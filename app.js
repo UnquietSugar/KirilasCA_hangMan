@@ -5,7 +5,8 @@ const lines = document.getElementById('lines')
 const newGame = document.querySelector('.newGame')
 
 let words =['car','shop','apple','house','horse','']
-let letterArr=[]
+let guessedLetter=[]
+let counter=0
 newGame.addEventListener('click',ng)
 input.addEventListener('keypress',check)
 
@@ -28,12 +29,10 @@ function ng(){
 
 function check(e){
     if (e.key === 'Enter'){
-        let counter = Number(JSON.parse(localStorage.getItem('counter')))
+        for (let i = 0; i < letter.length; i++) {
+            if (letter[i].toUpperCase() === input.value.toUpperCase()){
+                guessedLetter.push(i)
 
-        for (let i = 0; i < letterArr.length; i++) {
-            if (letterArr[i].toUpperCase() === input.value.toUpperCase()){
-                letter[i].style.color='black'
-                letterArr.splice(i,1)
             }
         }
     }
