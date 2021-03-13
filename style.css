@@ -109,6 +109,7 @@ input{
 }
 .letter{
     color: transparent;
+    pointer-events: none;
 }
 .newGame{
     position: absolute;

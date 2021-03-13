@@ -19,6 +19,7 @@ modal.addEventListener('click',ng)
 ng()
 
 function ng() {
+    input.value=''
     modal.style.backgroundColor=''
     modalText.style.backgroundColor=''
     modal.style.display='none'
@@ -42,6 +43,10 @@ function check(e) {
             for (let i = 0; i < letter.length; i++) {
                 if (letter[i].innerText.toLowerCase()===input.value.toLowerCase()){
                     letter[i].style.color='black'
+                    if (usedLetters.includes(input.value)){
+                        input.value=''
+                       return console.log('Letter is already used')
+                    }
                     winCount++
                     if (winCount===word.length){
                         modal.style.display='flex'
@@ -62,7 +67,8 @@ function check(e) {
                 modalText.innerText='Game Over! Try Again!'
             }
         }
-        console.log(winCount)
+        usedLetters+=input.value
+        console.log(usedLetters)
     }
     input.value = ''
 }
