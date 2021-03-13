@@ -118,8 +118,25 @@ input{
     background-color: #8c8b8b;
     padding: 10px;
     cursor: pointer;
+    user-select: none;
 }
 .newGame:hover{
     color: #92ef92;
     transform: scale(1.1);
+}
+.modal{
+    position: absolute;
+    height: 98vh;
+    width: 98vw;
+    background-color: rgba(100,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalText{
+    background-color: rgba(100,0,0,0.4);
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 600;
+    user-select: none;
 }
