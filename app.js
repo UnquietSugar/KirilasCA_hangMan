@@ -57,6 +57,10 @@ function check(e) {
                 }
             }
         } else {
+            if (usedLetters.includes(input.value)) {
+                input.value = ''
+                return console.log('Letter is already used')
+            }
             hangMan[counter].style.display = 'block'
             if (counter < 6) {
                 counter++
